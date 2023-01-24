@@ -1,0 +1,43 @@
+#utilidad{
+    position: relative;
+    height: 100vh;
+    background-color: var(--white);
+}
+
+.derecha{
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.derecha p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: var(--grey-fondoclaro);
+}
+
+
+.derecha p span{
+    color: var(--background-black);
+}
+
+.izquierda{
+    position: absolute;
+    left: -30px;
+    bottom: -8px;
+    overflow: hidden;
+    width: 500px;
+}
+
+
+.izquierda img{
+    width: 100%;
+}

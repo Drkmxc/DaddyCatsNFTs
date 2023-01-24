@@ -1,0 +1,22 @@
+.autor{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    
+    background-color: rgb(19, 18, 18);
+    padding: 10px;
+    color: var(--white);
+    font-size: 14px;
+}
+
+
+.autor a{
+    text-decoration: none;
+    color: var(--purple);
+}
+
+
+.autor a:hover{
+    text-decoration: underline;
+}

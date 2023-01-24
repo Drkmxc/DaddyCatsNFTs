@@ -1,0 +1,32 @@
+.carousel{
+    position: relative;
+    min-height: 20vh;
+    background-color: var(--background-black);
+}
+
+
+.swiper{
+    width: 100%;
+}
+
+
+.swiper-wrapper{
+    max-width: 300px;
+    margin-bottom: 75px;
+}
+
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+}
