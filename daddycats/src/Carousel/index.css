@@ -1,3 +1,7 @@
+.swiper-button-next, .swiper-button-prev{
+    display: none;
+}
+
 .carousel{
     position: relative;
     min-height: 20vh;
@@ -13,6 +17,11 @@
 .swiper-wrapper{
     max-width: 300px;
     margin-bottom: 75px;
+    transition-duration: 10ms;
+    transform: translate3d(-5056.5px, 0px, 0px);
+    display: grid;
+    grid-auto-flow: column;
+    gap: 12px;
 }
 
 

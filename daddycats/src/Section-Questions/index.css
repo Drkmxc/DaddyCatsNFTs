@@ -22,7 +22,7 @@
 .contenedor-preguntas{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 28px;
     padding-bottom: 50px;
 }
 
@@ -39,12 +39,14 @@
 
 
 .contenedor-pregunta:hover{
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+    box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 42%);
 }
 
 
-.contenedor-pregunta.activa{
-    border: 2px solid var(--black);
+
+.activa{
+    border: 2px solid #525252;
+    box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 42%);
 }
 
 
@@ -67,8 +69,6 @@
 .respuesta{
     color: var(--grey-fondoclaro);
     line-height: 30px;
-    max-height: 0;
-    opacity: 0;
     transition: .3s ease all;
 }
 
@@ -98,4 +98,5 @@
 
 .contenedor-pregunta.activa img{
     transform: rotate(45deg);
+    transition: all .2s ease;
 }

@@ -164,6 +164,7 @@ h2 span{
       position: fixed;
       width: 100%;
       height: 100vh;
+      padding-top: 20px;
       top: 10vh;
       left: -100%;
       display: flex;
@@ -198,6 +199,7 @@ h2 span{
   /* hacer funcionar al menu */
   .menu.show{
       left: 0;
+      padding-top: 20px;
   }
   /* textos generales */
   h1{

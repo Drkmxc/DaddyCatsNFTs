@@ -11,7 +11,7 @@ import image8 from "../assets/carousel08.webp"
 import image9 from "../assets/carousel09.webp"
 import image10 from "../assets/carousel10.webp"
 
-function Carousel(){
+function Carousel(){ 
     return (
         <div className="carousel">
             <div className="swiper mySwiper">

@@ -6,6 +6,7 @@ import { ContainerTitulo } from "../Header/Header-Container";
 import { NavHeader } from "../Header/Header-Nav";
 import { QuienesSomosSection } from "../Section-Quienes Somos/index";
 import { Carousel } from "../Carousel";
+import { SwiperCarousel } from "../Carousel/Carousel-Swiper";
 import { UtilidadesSection } from "../Section-Utilidades";
 import { ServicesSection } from "../Section-Services";
 import { QuestionsSection } from "../Section-Questions";
@@ -41,8 +42,10 @@ function AppUI(){
 
             <QuienesSomosSection />
 
-            <Carousel />
-            
+            {/* <Carousel /> */}
+
+            <SwiperCarousel />
+
             <UtilidadesSection />
                 
             <ServicesSection />

@@ -6,7 +6,8 @@ import MagicEden from "./assets/MagicEden.png"
 function NavHeader({ menuBurguer }){
     
     const [nav , setNav] = useState(false);
-    const [hamburguer, setHamburguer] = useState(false)
+    const [hamburguer, setHamburguer] = useState(false);
+    const [hamEffect, setHamEffect] = useState(false)
     
     const showNavbar = () => {
         if(window.scrollY > 0){
@@ -16,18 +17,8 @@ function NavHeader({ menuBurguer }){
         }
     }
 
-    // const spliceHamburguer = () => setHamburguer(!hamburguer)
 
     window.addEventListener("scroll", showNavbar)
-
-    // (document).ready(function(){
-    //     ('#hamburguer').click(function(){
-    //         ('.menu').toggleClass('show');
-    //     });
-    //     ('li , .logo-menu').click(function(){
-    //         ('.menu').removeClass('show');
-    //     });
-    // });
 
     return (
         <nav className={nav ? 'nav active' : 'nav'}>
@@ -42,7 +33,7 @@ function NavHeader({ menuBurguer }){
                     </a>
                 </div>
 
-                <ul className="menu ">
+                <ul className={hamburguer ? "menu show" : "menu"}>
                     <li>
                         <a href="#quienes-somos">¿Quiénes somos?</a>
                     </li>
@@ -85,9 +76,21 @@ function NavHeader({ menuBurguer }){
                     </li>
                 </ul>
 
-                <label id="hamburguer">
+                {/* <label id="hamburguer" onClick={() => {setHamburguer(!hamburguer)}}>
                     <i className="fa-solid fa-bars"></i>
-                </label>
+                </label> */}
+
+                <div id="hamburguer" className="three col" onClick={() => {setHamburguer(!hamburguer)}}>
+                    <div 
+                        className={hamEffect ? 'hamburger is-active' : 'hamburger'} 
+                        onClick={() => setHamEffect(!hamEffect)}
+                        id="hamburger-6"
+                    >
+                        <span className="line"></span>
+                        <span className="line"></span>
+                        <span className="line"></span>
+                    </div>
+                </div>
 
             </div>
         </nav>
