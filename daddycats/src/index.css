@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: solid 1px red; */
 }
 
 :root{
@@ -23,106 +24,16 @@ code {
 html{
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
-  width: 12px;
-}
-::-webkit-scrollbar-track{
-  border: 5px solid #2c3528;
-  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, .5);
-}
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(
-      45deg, #900CE8, #F94E9B
-  );
-  border-radius:50px;
-}
 
 body{
-  font-family: 'Share Tech Mono', monospace;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #070707;
 }
 
 
+/* ****************** C A T S ****************** */
 
 
-
-/* botones primario y secundario */
-
-.botones{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 60px;
-}
-.btn-ghost{
-  position: relative;
-  border: 2px solid var(--purple);
-  padding: 15px 40px;
-  color: var(--white);
-  text-transform: uppercase;
-  
-  text-decoration: none;
-  transition: color 0.5s, background 0.5s;
-  margin-right: 15px;
-  margin-left: 15px;
-  margin-bottom: 15px;
-  font-size: 1em;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, .25);
-}
-.btn-ghost.primary{
-  background-color: var(--purple);
-  letter-spacing: 1px;
-}
-.btn-ghost.primary:hover{
-  background-color: transparent;
-  color: var(--purple);
-}
-.btn-ghost.primary i{
-  font-size: 16px;
-}
-.btn-ghost.secundary{
-  background-color: transparent;
-  color: var(--purple);
-  letter-spacing: 1px;
-}
-.btn-ghost.secundary:hover{
-  background-color: var(--purple);
-  color: var(--white);
-}
-
-
-
-/* textos */
-
-h1{
-  color: #E6E6E6;
-  font-weight: 400;
-  font-size: 100px;
-  letter-spacing: 15px;
-  text-align: center;
-
-  margin: 30px 0px 15px 0px;
-}
-h2{
-  font-size: 70px;
-  text-align: center;
-  text-transform: uppercase;
-}
-h2 span{
-  color: transparent;
-  background-image: linear-gradient(to right, #900CE8, #F94E9B);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-
-
-
-
-/* 1280 - menu  */
 @media screen and (max-width: 1250px){
   /* menu tamaño */
   .logo-menu img{
@@ -147,11 +58,14 @@ h2 span{
   .menu li a i{
       font-size: 20px;
   }    
+  .img-adquirir {
+    height: 450px;
+  }
+  .contianer-pasos-section-adquirir-cats {
+    margin-left: 60px;
+  }
 }
 
-
-
-/* 1024 - textos y todo mas pequeño */
 @media screen and (max-width: 1024px){
   /* menu hamburguesa responsive */
   #hamburguer{
@@ -234,9 +148,10 @@ h2 span{
   .pregunta{
       font-size: 18px;
   }
+  .img-adquirir {
+    height: 350px;
+  }
 }
-
-
 
 @media screen and (max-width: 850px){
   /* generales */
@@ -271,9 +186,20 @@ h2 span{
       max-width: 90%;
       font-size: 18px;
   }
+  .img-roadmap {
+    height: 440px;
+  }
+  .img-adquirir{
+      height: 300px;
+      right: 10%;
+  }
+  .general-section-adquirir-cats {
+    padding: 120px 0 240px 0;
+  }
+  .container-image-adquirir {
+      height: 15vh;
+  }
 }
-
-
 
 @media screen and (max-width: 650px){
   /* generales */
@@ -283,13 +209,19 @@ h2 span{
   h2{
       font-size: 40px;
   }
+  #quienes-somos{
+      height: 60vh;
+  }
+  #utilidad {
+      height: 90vh;
+  }
   /* botones */
   .botones{
       margin-top: 50px;
   }
   .btn-ghost{
       padding: 15px 30px;
-      font-size: 0.9em;
+      font-size: 16px;
   }
   /* portada */
   .texto-portada{
@@ -299,15 +231,55 @@ h2 span{
   .swiper-wrapper{
       max-width: 250px;
   }
+
+  .contenido-servicios{
+    justify-content: flex-start;
+    height: 155vh;
+  }
+
+  .contenido-servicios p {
+      max-width: 100%;
+  }
+
+  .contactanos {
+      font-size: 16px;
+  }
   /* lista de servicios */
   .lista-servicios{
-      grid-gap: 10px;
-      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 16px;
+      grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, auto);
+  }
+  .div-arrow-article-pasos-section-adquirir-cats i {
+      font-size: 28px;
+  }
+
+  .h2-titulo-section-adquirir-cats {
+      font-size: 36px;
+  }
+
+  .contianer-pasos-section-adquirir-cats{
+      margin-top: 60px;
+  }
+  .div-arrow-article-pasos-section-adquirir-cats h3 {
+      font-size: 24px;
+  }
+  .div-texto-uno-article-pasos-section-adquirir-cats p, 
+  .div-texto-dos-article-pasos-section-adquirir-cats p, 
+  .div-texto-tres-article-pasos-section-adquirir-cats p {
+      font-size: 16px;
+  }
+
+  .titulo-faq {
+      margin-top: 0;
+  }
+
+  #contacto {
+      height: 100vh;
   }
   /* form para enviar mensajes y recibir al correo*/
   form{
-      width: 400px;
+      width: 440px;
   }
   /* footer */
   .fa-footer{
@@ -318,13 +290,31 @@ h2 span{
   }
   .condiciones-legales{
       margin-top: 30px;
+      line-height: 32px;
   }
   .copyright{
   margin-top: 30px;
   }
+  .container-roadmap-section-roadmap-cats h2 {
+      font-size: 40px;
+  }
+  .container-partners-section-roadmap-cats h2{
+      font-size: 40px;
+  }
+  .img-roadmap {
+    height: 350px;
+  }
+  .img-adquirir{
+      height: 300px;
+      right: 10%;
+  }
+  .general-section-adquirir-cats {
+    padding: 120px 0 240px 0;
+  }
+  .container-image-adquirir {
+      height: 15vh;
+  }
 }
-
-
 
 @media screen and (max-width: 500px){
   /* botones */
@@ -338,6 +328,13 @@ h2 span{
   }
   .texto-portada{
       font-size: 10px;
+  }
+  .carousel {
+      margin-top: 20px;
+  }
+  .swiper-slide {
+      width: 260px;
+      height: 260px;
   }
   /* quienes somos */
   .contenido-quienes-somos p{
@@ -356,6 +353,9 @@ h2 span{
       max-width: 100%;
       font-size: 16px;
   }
+  .img-roadmap {
+      height: 280px;
+  }
   /* faq */
   .pregunta{
       font-size: 16px;
@@ -367,6 +367,43 @@ h2 span{
   .contenido-contacto p{
       max-width: 100%;
       font-size: 16px;
+  }
+  .contenido-servicios {
+      margin: 50px;
+      height: auto;
+  }
+  .lista-servicios{
+    /* grid-gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto); */
+    display: flex;
+    grid-gap: 40px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+  }
+  .general-section-adquirir-cats {
+      padding: 80px 0 160px 0;
+      align-items: center;
+  }
+  .contianer-pasos-section-adquirir-cats{
+      width: 90%;
+      margin-left: 0;
+  }
+  .img-adquirir{
+      height: 250px;
+  }
+  .elemento-lista {
+      width: 100%;
+      position: sticky;
+      top: 15vh;
+  }
+  #faq{
+      min-height: 90vh;
+  }
+  .contenedor-preguntas{
+      padding-bottom: 20px;
   }
   form{
       width: 350px;
@@ -383,8 +420,6 @@ h2 span{
   }
 }
 
-
-
 @media screen and (max-width: 375px){
   /* generales */
   h1{
@@ -396,18 +431,59 @@ h2 span{
   /* quienes somos */
   .contenido-quienes-somos p{
       font-size: 14px;
+      line-height: 18px;
   }
   /* carrousel de imagenes */
   .swiper-wrapper{
-      max-width: 200px;
+      width: 200px;
+      height: 200px;
+  }
+  .carousel {
+      margin-bottom: 40px;
   }
   /* utilidades */
+  #utilidad {
+      height: 80vh;
+  }
   .derecha p{
       font-size: 14px;
+      line-height: 24px;
   }
+  .img-roadmap {
+      height: 220px;
+  }
+  .container-partners-section-roadmap-cats {
+      margin-top: 60px;
+  }
+  .container-roadmap-section-roadmap-cats h2 {
+      font-size: 32px;
+  }
+  .container-partners-section-roadmap-cats h2 {
+      font-size: 32px;
+  }
+
+  .h2-titulo-section-adquirir-cats {
+      font-size: 28px;
+  }
+  .div-arrow-article-pasos-section-adquirir-cats h3 {
+      font-size: 20px;
+  }
+  .div-arrow-article-pasos-section-adquirir-cats i {
+      font-size: 24px;
+  }
+  .button {
+      height: 6rem;
+      width: 6rem;
+      bottom: 20px;
+      right: 20px;
+  }
+  
   /* servicios */
   .contenido-servicios p{
       font-size: 14px;
+  }
+  .contenido-servicios p {
+      line-height: 20px;
   }
   /* faq */
   .pregunta{
@@ -442,9 +518,7 @@ h2 span{
   }
 }
 
-
-
-@media screen and (max-width: 300px){
+@media screen and (max-width: 320px){
   /* generales */
   h1{
       font-size: 20px;
@@ -457,5 +531,691 @@ h2 span{
   form{
       width: 225px;
   }
+  .img-roadmap {
+      height: 180px;
+  }
+  .elemento-lista {
+      top: 13vh;
+  }
+  .contenedor-preguntas div {
+      position: sticky;
+      top: 13vh;
+  }
+  #contacto {
+      height: 82vh;
+  }
+  form {
+      width: 260px;
+  }
+  form textarea {
+      font-size: 8px;
+  }
+  form textarea::placeholder {
+      font-size: 16px;
+  }
+  .btn-ghost {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+  .autor-labs p {
+      font-size: 1.4rem;
+      margin-left: 6rem;
+  }
+  .a-autor-labs {
+      margin-left: 8rem;
+  }
   
+}
+
+
+
+
+
+/* ****************** L A B S ****************** */
+
+
+@media screen and (max-width: 1250px) {
+    .h4-header-labs {
+        left: 20vw;
+    }
+    .ola {
+        top: 35rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #hamburguer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 4rem;
+        margin-right: 0;
+    }
+    .hamburger .line {
+        width: 5.6rem;
+        height: .6rem;
+        margin: 1.2rem;
+    }
+    #hamburger-6.is-active .line:nth-child(1) {
+        transform: translateY(18px);
+    }
+    #hamburger-6.is-active .line:nth-child(3) {
+        transform: translateY(-18px) rotate(90deg);
+    }
+    .container-nav{
+        min-height: 10vh;
+    }
+    .ul-nav{
+        position: fixed;
+        top: 12vh;
+        width: 100%;
+        height: 100vh;
+        padding-top: 20px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        text-align: left;
+        transition: all .5s;
+        background-color: rgba(68, 56, 56, 0.219);
+        backdrop-filter: blur(.6rem);
+    }
+    .ul-nav li{
+        padding-bottom: 10px;
+        /* margin: 20px; */
+        /* border-bottom: 1px solid #a7a7ad; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .a-nav {
+        width: 95%;
+        border-bottom: 2px solid #ffffffb7;
+        margin: 0 2rem;
+        padding: 4rem 2rem;
+    }
+    .ul-nav li a span{
+        display: unset;
+        margin-right: 10px;
+    }
+    .ul-nav li a img{
+        width: 18px;
+    }
+    .ul-nav li a i{
+        font-size: 15px;
+    }
+    .ul-nav.show{
+        left: 0;
+        /* top: 12vh; */
+        padding-top: 20px;
+    }
+    .filter {
+        backdrop-filter: blur(.6rem);
+    }
+    .filter-nav {
+        backdrop-filter: none;
+    }
+
+
+
+
+
+    .li-nav {
+        padding: 0;
+        font-size: 3.2rem;
+    }
+    .video-fondo-labs {
+        top: 25rem;
+    }
+    .h4-header-labs {
+        top: 60%;
+        left: 5vw;
+        font-size: 3.6rem;
+        line-height: 7.2rem;
+    }
+    .ola {
+        top: 92rem
+    }
+    .h1-section-nfts-labs {
+        font-size: 7.2rem;
+    }
+    .p-section-nfts-labs {
+        width: 86%;
+        font-size: 3.2rem;
+        line-height: 6rem;
+    }
+    .h2-services-labs {
+        font-size: 5.2rem;
+    }
+    .h1-services-labs {
+        font-size: 4rem;
+    }
+    .container-uno-services-labs {
+        width: 80%;
+    }
+    .container-tres-services-labs {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 8rem;
+        margin-top: 8rem;
+    }
+    .article-container-tres-services-labs {
+        height: 32vh;
+    }
+    .h3-article-services-labs {
+        font-size: 2.8rem;
+    }
+    .p-article-services-labs {
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+    }
+    .h2-container-cuatro-services-labs {
+        font-size: 4rem;
+    }
+    .p-container-cuatro-services-labs {
+        font-size: 2.8rem;
+    }
+    .general-container-contador-labs {
+        height: 70vh;
+    }
+    .h2-contador-labs {
+        font-size: 4rem;
+        line-height: 5.2rem;
+    }
+    .container-contador-labs {
+        width: 100%;
+    }
+    .container-general-twitter-contador-labs, 
+    .container-general-nft-contador-labs, 
+    .container-general-discord-contador-labs {
+        height: 18vh;
+    }
+    footer {
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hamburger .line {
+        width: 4.4rem;
+        height: 0.4rem;
+        margin: 1rem;
+    }
+    #hamburger-6.is-active .line:nth-child(3) {
+        transform: translateY(-10px) rotate(90deg);
+    }
+
+    .logo-nav {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .video-fondo-labs {
+        height: 50rem;
+        top: 12rem;
+    }
+    .h4-header-labs {
+        width: 80%;
+        margin: 15rem auto 0 auto;
+        font-size: 4rem;
+        top: 65%;
+        line-height: 6rem;
+    }
+    .container-nav {
+        background-color: rgba(36, 33, 33, 0.445);
+    }
+    .li-nav {
+        font-size: 2.4rem;
+        padding: 0;
+    }
+    .ola {
+        top: 19rem;
+    }
+    .container-section-nfts-labs {
+        height: 100vh;
+    }
+    .h1-section-nfts-labs {
+        font-size: 5.2rem;
+    }
+    .p-section-nfts-labs {
+        font-size: 2.4rem;
+        line-height: 5.2rem;
+    }
+    .h2-services-labs {
+        font-size: 4.4rem;
+        letter-spacing: .6rem;
+    }
+    .container-dos-services-labs {
+        margin-top: 10rem;
+    }
+    .container-tres-services-labs {
+        width: 90%;
+    }
+    .h1-services-labs {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .general-container-contador-labs {
+        height: 70vh;
+    }
+    .article-container-tres-services-labs {
+        height: 40vh;
+    }
+    .h3-article-services-labs {
+        font-size: 2.4rem;
+    }
+    .p-article-services-labs {
+        font-size: 2rem;
+    }
+    .container-cuatro-services-labs {
+        margin-top: 16rem;
+    }
+    .h2-container-cuatro-services-labs {
+        width: 80%;
+        font-size: 3.2rem;
+    }
+    .p-container-cuatro-services-labs {
+        font-size: 2.4rem;
+    }
+    .general-container-contador-labs {
+        height: 100vh;
+    }
+    .h2-contador-labs {
+        font-size: 3.2rem;
+        line-height: 4.4rem;
+    }
+    .container-general-twitter-contador-labs, 
+    .container-general-nft-contador-labs, 
+    .container-general-discord-contador-labs {
+        height: 20vh;
+    }
+    .container-contador-labs {
+        width: 110%;
+    }
+    footer {
+        height: 25vh;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .li-nav {
+        font-size: 2rem;
+        padding: 0;
+    }
+    .video-fondo-labs {
+        top: 10rem;
+    }
+    .h4-header-labs {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    .ola {
+        top: 19rem;
+        display: none;
+    }
+    .ola-dos {
+        display: block;
+    }
+    .h1-section-nfts-labs {
+        font-size: 4rem;
+        letter-spacing: .8rem;
+    }
+    .p-section-nfts-labs {
+        line-height: 4.4rem;
+    }
+    .h2-services-labs {
+        font-size: 3.2rem;
+    }
+    .p-services-labs {
+        font-size: 2.4rem;
+    }
+    .section-services-labs{
+        margin-bottom: 6rem;
+    }
+    .container-dos-services-labs {
+        width: 80%;
+    }
+    .h1-services-labs {
+        width: 100%;
+        font-size: 3.2rem;
+        letter-spacing: .3rem;
+    }
+    .container-tres-services-labs {
+        width: 90%;
+    }
+    .article-container-tres-services-labs {
+        height: 50vh;
+    }
+    .p-article-services-labs {
+        font-size: 1.8rem;
+    }
+    .h2-container-cuatro-services-labs{
+        font-size: 2.6rem;
+        width: 80%;
+        letter-spacing: .1rem;
+    }
+    .p-container-cuatro-services-labs {
+        font-size: 2.4rem;
+    }
+    .h2-contador-labs {
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+    
+    .container-titulo-twitter-contador-labs,
+    .container-titulo-nft-contador-labs,
+    .container-titulo-discord-contador-labs {
+        margin-top: 1.2rem;
+    }
+    .container-contador-labs {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 40px;
+        width: 80%;
+    }
+    .general-container-contador-labs {
+        height: auto;
+        margin-bottom: 6rem;
+    }
+
+    .container-numero-twitter-contador-labs, 
+    .container-numero-nft-contador-labs, 
+    .container-numero-discord-contador-labs {
+        margin-top: 1.6rem;
+    }
+
+    .h2-twitter-contador-labs, 
+    .h2-nft-contador-labs, 
+    .h2-discord-contador-labs {
+        font-size: 4rem;
+    }
+
+    .simbolo-numero-nft-contador-labs {
+        font-size: 3.4rem;
+    }
+
+    .p-numero-contador-labs {
+        font-size: 3.4rem;
+    }
+
+    .p-texto-contador-labs {
+        font-size: 1.8rem;
+    }
+
+    .rrss {
+        margin-top: 2rem;
+    }
+
+    .condiciones-legales {
+        margin-top: 1.2rem;
+    }
+    
+    .copyright {
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .container-nav {
+        grid-template-columns: 1fr 2fr;
+    }
+    .logo-nav {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #hamburguer {
+        padding-right: 3.2rem;
+    }
+    .hamburger .line {
+        width: 3.8rem;
+        height: 0.4rem;
+        margin: .8rem;
+    }
+    #hamburger-6.is-active .line:nth-child(3) {
+        transform: translateY(-10px) rotate(90deg);
+    }
+    .li-nav {
+        font-size: 1.8rem;
+    }
+    .a-nav {
+        width: 90%;
+        padding: 3.2rem 2rem;
+    }
+    .video-fondo-labs {
+        top: 5rem;
+    }
+    .h4-header-labs {
+        margin: 0rem auto 0 auto;
+        font-size: 2.4rem;
+        line-height: 4.8rem;
+    }
+    .ola {
+        top: 28rem;
+    }
+    .container-section-nfts-labs {
+        height: 90vh;
+    }
+    .h1-section-nfts-labs {
+        font-size: 3.6rem;
+        letter-spacing: .4rem;
+    }
+    .p-section-nfts-labs {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+    .h2-services-labs {
+        font-size: 2.8rem;
+    }
+    .p-services-labs {
+        font-size: 2rem;
+    }
+    .container-dos-services-labs {
+        margin-top: 6rem;
+    }
+    .h1-services-labs {
+        font-size: 2.8rem;
+    }    
+    .container-tres-services-labs {
+        display: flex;
+        flex-direction: column;
+    }
+    .article-container-tres-services-labs {
+        height: 42vh;
+    }
+    .h3-article-services-labs {
+        font-size: 2.6rem;
+    }
+    .p-container-cuatro-services-labs {
+        font-size: 2rem;
+    }
+    .h2-contador-labs {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+    .container-contador-labs {
+        width: 90%;
+    }
+    .simbolo-numero-nft-contador-labs {
+        font-size: 2.8rem;
+    }
+    .p-numero-contador-labs {
+        font-size: 2.8rem;
+    }
+    .container-titulo-twitter-contador-labs, 
+    .container-titulo-nft-contador-labs, 
+    .container-titulo-discord-contador-labs {
+        margin-top: 0;
+    }
+    .container-simbolo-numero {
+        margin-top: .4rem;
+    }
+    .h2-twitter-contador-labs, 
+    .h2-nft-contador-labs, 
+    .h2-discord-contador-labs {
+        font-size: 3.2rem;
+    }
+    .p-texto-contador-labs {
+        font-size: 1.6rem;
+        margin-top: 0;
+    }
+    footer {
+        height: 30vh;
+    }
+    .rrss a {
+        margin: 1.2rem 1.6rem;
+    }
+}
+
+@media screen and (max-width: 393px) {
+    .ul-nav.show {
+        padding-top: 1.2rem;
+    }
+    #hamburger-6.is-active .line:nth-child(3) {
+        transform: translateY(-6px) rotate(90deg);
+    }
+    .a-nav {
+        padding: 2.4rem 2rem;
+    }
+    .video-fondo-labs {
+        top: 3.2rem;
+    }
+    .h4-header-labs {
+        font-size: 3.2rem;
+        margin: -4rem auto 0 auto;
+    }
+    .ola {
+        top: 14rem;
+    }
+    .container-section-nfts-labs {
+        height: 80vh;
+    }
+    .h1-section-nfts-labs {
+        font-size: 3.2rem;
+    }
+    .p-section-nfts-labs {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        margin: 2rem auto 0 auto;
+    }
+    .h2-services-labs {
+        font-size: 2.4rem;
+    }
+    .article-container-tres-services-labs {
+        height: 45vh;
+    }
+    .h3-article-services-labs {
+        font-size: 2.4rem;
+    }
+    .p-article-services-labs {
+        margin-top: 3.2rem;
+    }
+    .container-cuatro-services-labs {
+        margin-top: 10rem;
+    }
+    .h2-container-cuatro-services-labs {
+        font-size: 2.4rem;
+    }
+    .p-container-cuatro-services-labs {
+        font-size: 1.8rem;
+    }
+    .container-general-twitter-contador-labs, 
+    .container-general-nft-contador-labs, 
+    .container-general-discord-contador-labs {
+        height: 24vh;
+    }
+    .container-numero-twitter-contador-labs, 
+    .container-numero-nft-contador-labs, 
+    .container-numero-discord-contador-labs {
+        margin-top: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .article-container-tres-services-labs {
+        height: 46vh;
+    }
+    .h3-article-services-labs {
+        font-size: 2.2rem;
+    }
+    .p-article-services-labs {
+        font-size: 1.6rem;
+    }
+    .h2-contador-labs {
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hamburger .line {
+        width: 3.2rem;
+        height: 0.3rem;
+        margin: .8rem;
+    }
+    #hamburger-6.is-active .line:nth-child(3) {
+        transform: translateY(-4px) rotate(90deg);
+    }
+    .video-fondo-labs {
+        top: 10rem;
+        height: 32rem;
+    }
+    .h4-header-labs {
+        font-size: 2rem;
+        line-height: 4rem;
+        margin: 12rem auto 0 auto;
+    }
+    .ola {
+        top: 17rem;
+    }
+    .container-section-nfts-labs {
+        height: 70vh;
+    }
+    .h1-section-nfts-labs {
+        font-size: 2.8rem;
+    }
+    .p-section-nfts-labs {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+    .h2-services-labs {
+        font-size: 2.2rem;
+    }
+    .p-services-labs {
+        font-size: 1.6rem;
+    }
+    .article-container-tres-services-labs {
+        height: 44vh;
+    }  
+    .h3-article-services-labs {
+        font-size: 2rem;
+    }
+    .p-article-services-labs {
+        line-height: 2.6rem;
+    }
+    .h2-container-cuatro-services-labs {
+        font-size: 2rem;
+    }
+    .p-container-cuatro-services-labs {
+        font-size: 1.6rem;
+    }
+    .h2-contador-labs {
+        letter-spacing: .1rem;
+        font-size: 2rem;
+    }
+    .h2-twitter-contador-labs, 
+    .h2-nft-contador-labs, 
+    .h2-discord-contador-labs {
+        font-size: 2.6rem;
+    }
+    .simbolo-numero-nft-contador-labs {
+        font-size: 2.4rem;
+    }
+    .p-numero-contador-labs {
+        font-size: 2.4rem;
+    }
+    .p-texto-contador-labs {
+        margin-top: .8rem;
+    }
 }

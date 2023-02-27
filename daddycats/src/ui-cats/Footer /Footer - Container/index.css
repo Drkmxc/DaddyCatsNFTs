@@ -1,0 +1,84 @@
+.contenido-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rrss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.rrss a{
+    margin: 20px;
+}
+
+
+.fa-footer{
+    font-size: 40px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+.rrss a img{
+    width: 60px;
+    transition: 0.5s;
+}
+
+
+.fa-footer:hover, .rrss a img:hover{
+    transform: scale(1.15);
+}
+
+.a-twitter-footer:hover {
+    color: #3396e9;
+}
+
+.a-discord-footer:hover {
+    color: #5662eb;
+}
+
+.condiciones-legales{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.terminos{
+    border-right: 2px solid white;
+    padding-right: 10px;
+    margin-right: 5px;
+    color: var(--purple);
+    text-decoration: none;
+}
+
+
+.privacidad{
+    color: var(--purple);
+    text-decoration: none;
+}
+
+
+.cookies{
+    border-left: 2px solid white;
+    padding-left: 10px;
+    margin-left: 5px;
+    color: var(--purple);
+    text-decoration: none;
+}
+
+
+.terminos:hover, .privacidad:hover, .cookies:hover{
+    text-decoration: underline;
+}
+
+.copyright{
+    margin-top: 50px;
+    color: var(--white);
+    font-size: 18px;
+}

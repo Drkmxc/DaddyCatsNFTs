@@ -1,0 +1,114 @@
+.general-section-adquirir-cats {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 160px 0;
+}
+
+.container-titulo-section-adquirir-cats {
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+.h2-titulo-section-adquirir-cats {
+    color: #000;
+    font-size: 6rem;
+}
+
+.contianer-pasos-section-adquirir-cats {
+    width: 70%;
+    height: 50%;
+    margin-top: 100px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 80px;
+}
+
+
+.article-pasos-section-adquirir-cats {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.div-arrow-article-pasos-section-adquirir-cats {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.div-arrow-article-pasos-section-adquirir-cats i{
+    font-size: 32px;
+    color: #000;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.i-activo {
+    transform: rotate(90deg);
+}
+
+.div-arrow-article-pasos-section-adquirir-cats h3 {
+    font-size: 28px;
+    color: #000;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
+.div-texto-uno-article-pasos-section-adquirir-cats, 
+.div-texto-dos-article-pasos-section-adquirir-cats, 
+.div-texto-tres-article-pasos-section-adquirir-cats {
+    width: 80%;
+    margin-top: 32px;
+    margin-left: 48px;
+    display: none;
+    transition: all .4s ease-out;
+}
+
+.respuesta-active {
+    display: block;
+}
+
+.div-texto-uno-article-pasos-section-adquirir-cats p, 
+.div-texto-dos-article-pasos-section-adquirir-cats p, 
+.div-texto-tres-article-pasos-section-adquirir-cats p {
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.div-texto-uno-article-pasos-section-adquirir-cats p a, 
+.div-texto-dos-article-pasos-section-adquirir-cats p a, 
+.div-texto-tres-article-pasos-section-adquirir-cats p a {
+    color: #000;
+    transition: all .3s ease-in-out;
+}
+
+.div-texto-uno-article-pasos-section-adquirir-cats p a:hover, 
+.div-texto-dos-article-pasos-section-adquirir-cats p a:hover, 
+.div-texto-tres-article-pasos-section-adquirir-cats p a:hover {
+    color: #5662eb;
+}
+
+.phantom:hover {
+    color: #675ddd;
+}
+
+.img-adquirir {
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+

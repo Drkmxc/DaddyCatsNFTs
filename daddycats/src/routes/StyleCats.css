@@ -1,0 +1,72 @@
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.btn-ghost{
+    position: relative;
+    border: 2px solid var(--purple);
+    padding: 15px 40px;
+    color: var(--white);
+    text-transform: uppercase;
+    
+    text-decoration: none;
+    transition: color 0.5s, background 0.5s;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, .25);
+}
+.btn-ghost.primary{
+    background-color: var(--purple);
+    letter-spacing: 1px;
+}
+.btn-ghost.primary:hover{
+    background-color: transparent;
+    color: var(--purple);
+}
+.btn-ghost.primary i{
+    font-size: 16px;
+}
+.btn-ghost.secundary{
+    background-color: transparent;
+    color: var(--purple);
+    letter-spacing: 1px;
+}
+.btn-ghost.secundary:hover{
+    background-color: var(--purple);
+    color: var(--white);
+}
+  
+
+
+
+/* textos */
+
+h1{
+    color: #E6E6E6;
+    font-weight: 400;
+    font-size: 100px;
+    letter-spacing: 15px;
+    text-align: center;
+  
+    margin: 30px 0px 15px 0px;
+}
+h2{
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 span{
+    color: transparent;
+    background-image: linear-gradient(to right, #900CE8, #F94E9B);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+

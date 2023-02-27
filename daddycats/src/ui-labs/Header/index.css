@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: solid 1px red; */
+}
+
+:root {
+    --font-family-titulo: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --backgroud: #1f1f1f;
+    --background-nav: #313131;
+    --text-color: #fff;
+    --subtext-color: rgba(247, 247, 247, 0.87);
+}
+  
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: var(--font-family-titulo);
+}
+
+/* ********************** Styles ********************** */
+
+
+.container-header-labs {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    top: -9rem;
+    background-color: #000;
+}
+
+.video-fondo-labs {
+    width: 100vw;
+    height: 44rem;
+    margin: 0 auto;
+    position: relative;
+    top: 10rem;
+}
+
+.h4-header-labs {
+    font-size: 2.8rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    line-height: 5.2rem;
+    z-index: 1;
+    /* top: 90%; */
+    margin: 12rem auto 0 auto;
+}
+
+.ola {
+    position: relative;
+    top: 9.5rem;
+}
+
+.ola-dos {
+    display: none;
+    margin-top: 9.5rem;
+}

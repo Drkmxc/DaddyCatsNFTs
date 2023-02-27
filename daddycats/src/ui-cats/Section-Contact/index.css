@@ -1,0 +1,70 @@
+#contacto{
+    position: relative;
+    height: 115vh;
+    background-color: #070707;
+}
+
+
+.contenido-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.textsection-p {
+    max-width: 65%;
+    text-align: center;
+    font-size: 20px;
+    color: var(--grey-fondooscuro);
+    margin-top: 20px;
+}
+
+
+.textsection-p--span {
+    color: var(--white);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2C2C2C;
+    box-shadow: 0 0 0 0 #fff;
+}
+
+
+form input{
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: 1px solid #2C2C2C;
+    font-size: 16px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+
+form textarea{
+    resize: none;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: 1px solid #2C2C2C;
+    font-size: 16px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+
+form button{
+    margin-top: 20px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.primary {
+    cursor: pointer;
+}

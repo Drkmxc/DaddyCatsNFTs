@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: solid 1px red; */
+}
+
+::-webkit-scrollbar {
+    width: 0rem;
+}
+
+:root {
+    --font-family-titulo: 'Poppins';
+    --backgroud: #1f1f1f;
+    --background-nav: #313131;
+    --text-color: #fff;
+    --subtext-color: rgba(236, 236, 236, 0.808);
+}
+  
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: var(--font-family-titulo);
+}
+
+
+/* ********************** Styles ********************** */
+
+
+.general-container-contador-labs {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.h2-contador-labs {
+    font-size: 2.8rem;
+    color: var(--text-color);
+    letter-spacing: .2rem;
+    line-height: 4.4rem;
+}
+
+.a-555labs-h2 {
+    background: linear-gradient(90deg, #ff0000 0%, #ff8800 80%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: movimiento 3s linear infinite alternate;
+}
+
+.a-cats-h2 {
+    background-image: linear-gradient(to right, #900CE8, #F94E9B);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: movimiento 3s linear infinite alternate;
+    padding: .6rem 0;
+    transition: color .4s ease-in-out;
+}
+
+@keyframes movimiento {
+    from{
+        background-position: 0 0;
+    } to {
+        background-position: 100% 100%;
+    }
+}
+
+
+
+.a-cats-h2::before {  
+    transform: scaleX(0);
+    transform-origin: bottom top;
+}
+  
+.a-cats-h2:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom bottom;
+}
+
+.a-cats-h2:hover {
+    -webkit-text-fill-color: var(--text-color);
+    text-decoration: none;
+}
+
+.a-cats-h2::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: .4rem;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: linear-gradient(to right, #900CE8, #F94E9B);
+    z-index: -1;
+    transition: transform .6s ease;
+}
+  
+.a-cats-h2 {
+    position: relative;
+    border-radius: .4rem;
+}
+  
+@media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+}
+
+
+.container-contador-labs {
+    width: 85%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    background-color: #0a0a0acc;
+    border-radius: 2rem;
+    box-shadow: 0 0 8px 1px rgb(80, 80, 80);
+    margin-top: 9.2rem;
+    padding: 3.2rem 3.6rem;
+}
+
+.container-general-twitter-contador-labs,
+.container-general-nft-contador-labs,
+.container-general-discord-contador-labs {
+    height: 30vh;
+    font-family: var(--font-family-titulo);
+    background-color: #141414cc;
+    border-radius: 1.6rem;
+    padding: 1.6rem 2rem;
+}
+
+.container-general-twitter-contador-labs {
+    box-shadow: 0 0 10px -2px #3396e9;
+
+}
+
+.container-general-nft-contador-labs {
+    box-shadow: 0 0 10px -2px #900CE8;
+
+}
+
+.container-general-discord-contador-labs {
+    box-shadow: 0 0 10px -2px #5662eb;
+
+}
+
+.h2-twitter-contador-labs,
+.h2-nft-contador-labs,
+.h2-discord-contador-labs { 
+    font-size: 3.6rem;
+    letter-spacing: .2rem;
+}
+
+.h2-twitter-contador-labs {
+    background: linear-gradient(90deg, #3396e9 40%, #5aa6e4 80%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    
+}
+
+.h2-nft-contador-labs {
+    background: linear-gradient(270deg, #900CE8 40%, #F94E9B 80%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    
+}
+
+.h2-discord-contador-labs {
+    background: linear-gradient(270deg, #5662eb 50%, #3341df 80%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    
+}
+
+
+.container-numero-twitter-contador-labs,
+.container-numero-nft-contador-labs,
+.container-numero-discord-contador-labs {
+    height: 40%;
+    margin-top: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-simbolo-numero {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simbolo-numero-nft-contador-labs {
+    color: var(--text-color);
+    font-size: 4rem;
+    padding-right: 12px;
+}
+
+.p-numero-contador-labs {
+    color: var(--text-color);
+    font-size: 4rem;
+}
+/* 
+.simbolo-twitter {
+    padding-right: 12px;
+}
+
+.simbolo-discord {
+    padding-right: 8px;
+} */
+
+.p-texto-contador-labs {
+    color: var(--subtext-color);
+    font-size: 1.6rem;
+    margin-top: .4rem;
+    letter-spacing: 1px;
+}

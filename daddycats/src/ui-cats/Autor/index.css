@@ -1,0 +1,26 @@
+.autor{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: rgb(19, 18, 18);
+    padding: 20px;
+    color: var(--white);
+    font-size: 20px;
+    
+}
+
+
+.autor a{
+    text-decoration: none;
+    color: #1766c2;
+    text-decoration: underline;
+}
+
+.autor a:hover{
+    text-decoration: underline;
+}
+
+
+
+

@@ -1,0 +1,57 @@
+.portada{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-portada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 40px;
+}
+
+.contenido-portada img{
+    width: 250px;
+    height: 250px;
+}
+
+.texto-portada{
+    color: #5C5C5C;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contenido-portada .link-kitty{
+    text-decoration: none;
+    font-style: italic;
+    color: #5C5C5C;
+}
+
+.contenido-portada .link-kitty:hover{
+    text-decoration: underline;
+    color: var(--purple);
+}
+
+.link-quienes-somos{
+    position: absolute;
+    bottom: 40px;
+    transition: all .5s ease-in-out;
+}
+
+.link-quienes-somos:hover{
+    transform: translateY(15px);
+}
+  
+
+.fa-angles-down{
+    color: var(--white);
+    font-size: 36px;
+    padding: 10px;
+}

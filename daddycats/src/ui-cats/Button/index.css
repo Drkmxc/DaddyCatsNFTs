@@ -1,0 +1,42 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.container-button {
+    position: absolute;
+}
+
+.button{
+    z-index: 1000;
+    background-color: #5662eb;
+    color: #fff;
+    border: none;
+    height: 6.8rem;
+    width: 6.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 50px;
+    bottom: 40px;
+    right: 40px;
+    position: fixed;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.button:hover{
+    transform: scale(1.2) rotate(360deg);
+    box-shadow: 0 0 5px 2px #5662eb;
+}
+
+.button span {
+    display: none;
+}
+
+.logo-discord {
+    font-size: 3.2rem;
+}
